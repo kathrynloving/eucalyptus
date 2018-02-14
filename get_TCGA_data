@@ -1,0 +1,5 @@
+# Example for a single indication. Simply replace CESC with every other 4-letter code.
+wget http://gdac.broadinstitute.org/runs/code/firehose_get_latest.zip
+unzip firehose_get_latest.zip
+export PATH=".":$PATH
+firehose_get -b -only Merge_rnaseqv2__illuminahiseq_rnaseqv2__unc_edu__Level_3__RSEM_genes__data data latest CESC
